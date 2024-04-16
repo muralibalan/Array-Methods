@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array split and Join Method</title>
+</head>
+<body>
+    <div id ='result'></div>
+    <script>
+
+        let numberArray = [1000, 2000, 3000, 4000];
+        let stringArray=[];
+        let spletedArray = [];
+        let joinedArray = [];
+        for(let i=0 ; i < numberArray.length ; i++){
+           stringArray.push(String(numberArray[i]))
+           spletedArray.push(stringArray[i].split(''));
+            joinedArray.push(spletedArray[i].join(''));
+        }
+
+        document.getElementById('result').innerHTML = stringArray;
+        console.log(spletedArray)
+        console.log(joinedArray)
+        
+        //ToString is convert the like number to string converted...
+    </script>
+</body>
+</html>
